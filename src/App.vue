@@ -5,18 +5,23 @@
 </template>
 
 <script>
+  import { csv } from 'd3'
 
-export default {
-  data() {
-    return {
-      title: 'Pointer!'
+  export default {
+    data() {
+      return {
+        title: 'Pointer!'
+      }
+    },
+    created() {
+      return csv('/data/pointer-raw.csv')
+        .then(console.log)
     }
   }
-}
 </script>
 
 <style>
-#app {
-  background: white;
-}
+  #app {
+    background: white;
+  }
 </style>
