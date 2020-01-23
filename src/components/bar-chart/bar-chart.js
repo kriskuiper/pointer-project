@@ -21,6 +21,10 @@ export default {
       type: String,
       required: true
     },
+    averageLabel: {
+      type: String,
+      required: true
+    },
     average: {
       type: String,
       required: true
@@ -46,6 +50,7 @@ export default {
     let selectedProperty = this.property
 
     let dutchLabel = capitalize(dutch.naam)
+    let averageLabel = capitalize(this.averageLabel)
     let companyLabel_v1 = capitalize(company.naam)
     let companyLabel = companyLabel_v1.substring(0, 8) + '...'
 
@@ -93,7 +98,7 @@ export default {
 
     this.renderChart(
       {
-        labels: [dutchLabel, ['Normale', 'bovengrens'], companyLabel],
+        labels: [dutchLabel, ['Normale', averageLabel], companyLabel],
         datasets: [
           {
             data: [dutchValue, average, companyValue],
