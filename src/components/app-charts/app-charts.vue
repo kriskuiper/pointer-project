@@ -54,7 +54,7 @@
       <section class="app-charts__bar">
         <h2 class="app-charts__title">Omzet per FTE</h2>
         <p>Omzet per FTE geeft aan hoeveel € omzet een full-time medewerker de zorginstelling per jaar oplevert. Het is verdacht als een zorgbedrijf een hoge omzet per FTE heeft
-          aangezien de werkzaamheden in de zorgsector vaak arbeidsintensief zijn, dit proces daardoor niet veel efficiënter zal worden en wat er aan een uur zorgverlening verdiend wordt, dan ook niet zomaar zo hoog is. Zodra dit boven de €125.000 komt, vinden wij dit verdacht.</p>
+          aangezien de zorg een arbeidsintensieve sector is, de werkzaamheden niet veel efficiënter kunnen gebeuren en wat er aan een uur zorgverlening verdiend wordt, dan ook niet zomaar zo hoog kan zijn in vergelijking met de rest van Nederland. Zodra dit boven de €125.000 komt, vinden wij dit verdacht.</p>
         <bar-chart
           v-if="selectedData && selectedDutchData.omzetPerFte"
           :selected-data="selectedData"
