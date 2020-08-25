@@ -21,7 +21,7 @@
     "mkdirp": "0.5.1",
     "nuxt": "2.10.2",
     "query-string": "6.12.1",
-    "vue-chartjs": "3.5.0"
+    "vue-chartjs": "3.5.1"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "1.0.0",
